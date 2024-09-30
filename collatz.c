@@ -143,7 +143,7 @@ void run_collatz(int N, int min_val, int max_val, int cache_type, FILE *fp) {
 
     // Output cache hit percentage
     printf("Cache type %d: Cache hit percentage: %.2f%%\n", cache_type,
-           (double)hits / N * 100);
+           (double)hits / N * 250);
     printf("Cache type %d: Total cache misses: %d\n", cache_type, total_misses);
     printf("Cache type %d: Total evictions: %d\n", cache_type, total_evictions);
 }
